@@ -1,22 +1,63 @@
-FreePBX Docker Installation Guide
-This document provides step-by-step instructions to build and run the FreePBX Docker
-container.
-Steps to Run FreePBX Container
-Open a terminal and navigate to the FreePBX project directory.
-1.
-Build the Docker container image using Docker Compose:
-•
-2.
-Start the container in detached mode:
-•
-3.
-sudo docker-compose up -d
-Access the running container's shell:
-•
-4.
+# FreePBX Docker Installation Guide
+
+This guide provides a clean and structured walkthrough to build, run, and install FreePBX inside a Docker container.
+
+---
+
+## 🚀 Steps to Run the FreePBX Container
+
+### 1. Open a Terminal
+
+Navigate to your FreePBX project directory.
+
+---
+
+## 🏗️ 2. Build the Docker Image
+
+Use Docker Compose to build the container image:
+
+```bash
 sudo docker-compose build
+```
+
+---
+
+## ▶️ 3. Start the Container
+
+Start FreePBX in detached mode:
+
+```bash
+sudo docker-compose up -d
+```
+
+---
+
+## 🐚 4. Access the Running Container
+
+Enter the FreePBX container shell:
+
+```bash
 sudo docker exec -it freepbx17 bash
-Once inside the container, run the FreePBX installation script:
-•
+```
+
+---
+
+## 📦 5. Install FreePBX
+
+Once inside the container, run the installation script:
+
+```bash
 bash sng_freepbx_debian_install.sh --skipversion
-Ensure all commands are run in the correct sequence for a successful FreePBX setup.
+```
+
+---
+
+## ✅ Notes
+
+* Make sure to run all commands in the order listed above.
+* A full and successful FreePBX setup depends on keeping this sequence.
+
+---
+
+Happy deploying! 🎉
+
