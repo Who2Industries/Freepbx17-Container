@@ -1,3 +1,10 @@
+# Notes about this Project
+
+All the code gets published to **Codeberg**. All other platforms are just mirrors.
+
+Issues, pull requests, and everything else will only be looked at on **codeberg.org**.
+
+
 # FreePBX Docker Installation Guide
 
 This guide provides a clean and structured walkthrough to build, run, and install FreePBX inside a Docker container.
